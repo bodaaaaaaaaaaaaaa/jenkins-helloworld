@@ -1,0 +1,8 @@
+node {
+    stage('bado') {
+git credentialsId: 'access-github', url: 'https://github.com/bodaaaaaaaaaaaaaa/jenkins-helloworld.git'
+ sh '''javac Main.java
+java Main'''
+        
+    }
+}
